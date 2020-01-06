@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/infoFragment">
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="kj.x.jd.main.ShoeFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fg_shoe_layout"/>
+    <fragment
+        android:id="@+id/marketFragment"
+        android:name="kj.x.jd.main.FavouriteFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fg_favourite_layout"/>
+    <fragment
+        android:id="@+id/meFragment"
+        android:name="kj.x.jd.main.MeFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fg_me_layout"/>
+</navigation>

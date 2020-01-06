@@ -2,14 +2,13 @@ package kj.x.jd
 
 import android.content.Intent
 import android.content.IntentFilter
-import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import kj.x.jd.jeatpack.JeatPackDemoActivity
+import kj.x.jd.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.coroutines.CoroutineContext
 
 class MainActivity : AppCompatActivity(),View.OnClickListener{
 
@@ -22,6 +21,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener{
         unRegisterBtn.setOnClickListener(this)
         centerTv.setOnClickListener(this)
         jeatPackDemoBtn.setOnClickListener(this)
+        loginBtn.setOnClickListener(this)
         var str = when{
             count == 40 -> "ssss"
             count > 30 -> ">30"
@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener{
             unRegisterBtn -> registerLockScreenRegister()
             centerTv -> startActivity(Intent(this, DataBindingTest::class.java))
             jeatPackDemoBtn -> startActivity(Intent(this, JeatPackDemoActivity::class.java))
+            loginBtn -> startActivity(Intent(this, LoginActivity::class.java))
         }
 
     }

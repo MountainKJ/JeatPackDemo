@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,6 +24,7 @@
         <activity android:name=".DataBindingTest"/>
         <activity android:name=".jeatpack.JeatPackDemoActivity"/>
         <activity android:name=".jeatpack.JeatPackActivity_AndroidKTX"/>
+        <activity android:name=".main.HomePageActivity"/>
     </application>
 
 </manifest>

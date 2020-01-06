@@ -25,6 +25,12 @@
         android:layout_height="60dp"
         app:layout_constraintTop_toBottomOf="@id/unRegisterBtn"
         android:text="jeatPackDemoBtn"/>
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/jeatPackDemoBtn"
+        android:text="loginBtn"/>
 
 
     <TextView
